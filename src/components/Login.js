@@ -11,6 +11,7 @@ function Login() {
     auth
       .signInWithPopup(provider)
       .then((result) => {
+		  
         dispatch({
           type: "SET_USER",
           user: result.user
